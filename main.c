@@ -40,15 +40,13 @@ int main() {
         pthread_join(threads[i], NULL);
     }
 
-    printf("Valor total final : %d\n",TOTAL_MATRIZ);
+    printf("%d\n",TOTAL_MATRIZ);
 }
 
 void *soma_fila(void *args) {
     pthread_mutex_lock(&mutex);
     for (int i = 0;i < ORDEM;i++){
-        printf("Somando : %d \n",MATRIZ[LINHA][i]);
         TOTAL_MATRIZ += MATRIZ[LINHA][i];
-        printf("Valor total dinamico: %d\n",TOTAL_MATRIZ);
     }
     LINHA++;
     pthread_mutex_unlock(&mutex);
