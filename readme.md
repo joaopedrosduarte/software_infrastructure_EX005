@@ -1,6 +1,4 @@
-<img src="../image/code.png" align="right" width="300">
-
-# Round Robin Scheduling 004#
+# Mutex em threads 005#
 
 Dessa vez vai em portugues, "sem tempo irmão". De forma resumida o codigo retrata os conceitos de round robin onde sera dado o numero de procesos, o quantum de tempo (unidade de tempo) e o tempo que cada processo leva pra ser completo, claro não é realmente uma implementacão de um Scheduling de Round Robin real mas usa os mesmos conceitos de unidades de tempo tornando o processo preemptivo. Infelizmente não consegui fazer as medicoes de tempo dentro do prazo mas no codigo ja esta presente o processo completo do round robin (espero que considere :smile:).
 
